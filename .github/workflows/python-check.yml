@@ -3,6 +3,9 @@ name: Python Check + Lint
 on:
   push:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   check-python:
     runs-on: ubuntu-latest
@@ -21,10 +24,7 @@ jobs:
 
       - name: Check Python syntax
         run: |
-          echo "Checking syntax..."
           python -m py_compile $(git ls-files '*.py')
 
       - name: Run flake8 linting
-        run: |
-          echo "Running linting..."
-          flake8 .
+        run: flake8 .
