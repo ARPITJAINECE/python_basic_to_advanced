@@ -1,2 +1,3 @@
 name = input("what's your name ? ")
-print("length of your name is : ", len(name))
+len_name = len(name)
+print("length of your name is : ", len_name)
