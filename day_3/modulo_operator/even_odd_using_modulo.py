@@ -4,3 +4,6 @@ if remainder == 0:
     print("even")
 else:
     print("odd")
+
+print("method 2 : ")
+print("even" if remainder == 0 else "odd")
