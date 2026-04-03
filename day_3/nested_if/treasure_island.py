@@ -34,4 +34,4 @@ elif direction == "left":
     else:
         print("invalid choice....")
 else:
-    prin
+    print("invalid option.....")
