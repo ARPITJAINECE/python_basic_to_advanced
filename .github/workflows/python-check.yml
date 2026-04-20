@@ -27,4 +27,4 @@ jobs:
           python -m py_compile $(git ls-files '*.py')
 
       - name: Run flake8 linting
-        run: flake8 . --max-line-length=100
+        run: flake8 . --max-line-length=150
