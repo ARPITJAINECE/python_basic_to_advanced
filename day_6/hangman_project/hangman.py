@@ -38,7 +38,7 @@ def won_or_loss(guess, secret_word):
         print(f"Good, {guess} is in the word!")
         return True
     else:
-        print(f"You have guessed wrong word!!!")
+        print("You have guessed wrong word!!!")
         return False
 
 
