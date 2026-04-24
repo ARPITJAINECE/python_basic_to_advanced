@@ -34,4 +34,4 @@ print("Lets find your love score!!!\n")
 name1 = input("Enter first name : ")
 name2 = input("Enter second name : ")
 
-print(f"Your love score is : {love_calculator(name1,name2)}")
+print(f"Your love score is : {love_calculator(name1, name2)}")
