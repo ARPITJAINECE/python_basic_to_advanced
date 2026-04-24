@@ -59,6 +59,6 @@ print(f"Using sum function : {total_exam_score}")
 print("now using for loop!!!")
 sum = 0
 for score in students_score:
-    sum+=score
+    sum += score
 
 print(f"Sum of all the scores is : {sum}")
