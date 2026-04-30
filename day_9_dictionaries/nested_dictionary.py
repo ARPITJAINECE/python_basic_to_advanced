@@ -9,3 +9,5 @@ students = {
     },
 }
 print(students["student1"]["name"])
+print(students.items())
+print(students["student1"].values())
