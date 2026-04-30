@@ -9,5 +9,5 @@ students = [
     },
 ]
 
-#accessing
+# accessing
 print(students[0]["name"])
