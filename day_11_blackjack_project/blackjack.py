@@ -20,13 +20,24 @@ def cal_score(cards):
     return sum(cards)
 
 
-def compare(sum_player,sum_comp):
-    if sum_player>21 and sum_comp>21:
+def compare_game(sum_player, sum_comp):
+    if sum_player > 21 and sum_comp > 21:
         return "Your SUM exceeded, GAME OVER!!!"
-    
-    if sum_player==sum_comp:
+
+    if sum_player == sum_comp:
         return "DRAW"
-    elif 
+    elif sum_comp == 0:
+        return "Lose, Computer has a Natural Blackjack!!!!"
+    elif sum_player == 0:
+        return "WON, you have a natural BlackJack!!!!"
+    elif sum_player > 21:
+        return "LOOSE, You have exceeded 21 value sum.."
+    elif sum_comp > 21:
+        return "WON, opponent has sum > 21.."
+    elif sum_player > sum_comp:
+        return "WON !!!!"
+    else:
+        return "LOOSE !!!"
 
 
 if __name__ == "__main__":
@@ -52,7 +63,7 @@ if __name__ == "__main__":
         # print(f"comp cards sum : {sum_comp}")
 
         print(f"Your cards are : {player_cards} and your total sum is : {sum_player}")
-        print(f"Computer cards sum is : {sum_comp}")
+        print(f"Computer first card is : {computer_cards[0]}")
 
         if sum_player == 0 or sum_comp == 0 or sum_player > 21:
             print("Your cards sum > 21, GAME OVER!!!")
@@ -63,3 +74,12 @@ if __name__ == "__main__":
                 player_cards.append(deal_cards(cards))
             else:
                 game_over = True
+
+    while sum_comp != 0 and sum_comp < 17:
+        computer_cards.append(deal_cards(cards))
+        sum_comp = cal_score(computer_cards)
+
+    print(f"Computer cards sum is : {sum_comp}")
+    # print(f"Your cards are : {player_cards} and your total sum is : {sum_player}")
+
+    print(compare_game(sum_player, sum_comp))
