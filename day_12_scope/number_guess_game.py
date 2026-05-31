@@ -14,8 +14,10 @@ def hard_level():
     chances = 5
     print(f"You have {chances} left")
 
+
 def easy_level():
     return "Hi"
+
 
 if __name__ == "__main__":
     entry()
