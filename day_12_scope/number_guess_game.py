@@ -12,7 +12,7 @@ def choose_level():
 def hard_level():
     print("You have choosen hard level...\n Lets start game::::::")
     chances = 5
-    print(f"You have {chances} left ")
+    print(f"You have {chances} left")
 
 
 if __name__ == "__main__":
