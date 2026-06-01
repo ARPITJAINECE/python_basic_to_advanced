@@ -16,7 +16,7 @@ def hard_level():
 
 
 def easy_level():
-    return "Hi hello"
+    return "Hi"
 
 
 if __name__ == "__main__":
