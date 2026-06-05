@@ -36,5 +36,5 @@ print(ev.get_ev_details())
 
 my_tesla = EV("tesla", "model-a", 1500)
 
-print(f"{isinstance(my_tesla,Car)}")
-print(f"{isinstance(my_tesla,EV)}")
+print(f"{isinstance(my_tesla, Car)}")
+print(f"{isinstance(my_tesla, EV)}")
