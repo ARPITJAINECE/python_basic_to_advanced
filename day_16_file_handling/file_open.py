@@ -1,0 +1,5 @@
+f = open("day_16_file_handling/myfile.txt", "r")
+print(f)
+text = f.read()
+print(text)
+f.close()
